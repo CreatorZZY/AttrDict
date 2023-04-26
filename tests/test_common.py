@@ -3,7 +3,11 @@
 Common tests that apply to multiple Attr-derived classes.
 """
 import copy
-from collections import namedtuple, Mapping, ItemsView, KeysView, ValuesView
+try:
+    from collections.abc import namedtuple, Mapping, ItemsView, KeysView, ValuesView
+except Exception:
+    from collections import namedtuple, Mapping, ItemsView, KeysView, ValuesView
+
 from itertools import chain
 import pickle
 from sys import version_info
@@ -26,6 +30,7 @@ class AttrImpl(Attr):
     """
     An implementation of Attr.
     """
+
     def __init__(self, items=None, sequence_type=tuple):
         if items is None:
             items = {}

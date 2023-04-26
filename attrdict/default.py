@@ -1,7 +1,11 @@
 """
 A subclass of MutableAttr that has defaultdict support.
 """
-from collections import Mapping
+try:
+    from collections.abc import Mapping
+except Exception:
+    from collections import Mapping
+
 
 import six
 
