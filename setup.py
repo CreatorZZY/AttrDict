@@ -15,12 +15,12 @@ except:
 
 
 setup(
-    name="attrdict",
+    name="gattrdict",
     version="2.0.1",
-    author="Brendan Curran-Johnson",
+    author="Brendan Curran-Johnson; George Zhao",
     author_email="brendan@bcjbcj.ca",
     packages=("attrdict",),
-    url="https://github.com/bcj/AttrDict",
+    url="https://github.com/CreatorZZY/gAttrDict.git",
     license="MIT License",
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
