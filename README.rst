@@ -30,12 +30,12 @@ Installation
 ============
 AttrDict is in PyPI, so it can be installed directly using::
 
-    $ pip install attrdict
+    $ pip install gattrdict
 
 Or from Github::
 
-    $ git clone https://github.com/bcj/AttrDict
-    $ cd AttrDict
+    $ git clone https://github.com/CreatorZZY/gAttrDict.git
+    $ cd gAttrDict
     $ python setup.py install
 
 Basic Usage
